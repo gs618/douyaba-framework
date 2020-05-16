@@ -1,0 +1,30 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/douyaba_exception?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false
+    username: root
+    password: 123456
+  jpa:
+    database: MySQL
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+douyaba:
+  swagger:
+    # 一定开启security
+    security:
+      enabled: true
+      # 配置http请求头
+      schemes:
+        Authorization:
+          key-name: Authorization
+        tenantId:
+          key-name: tenantId
+        USER_ID:
+          key-name: USER_ID

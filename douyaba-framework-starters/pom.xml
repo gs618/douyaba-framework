@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>douyaba-framework-parent</artifactId>
+        <groupId>com.github.douyaba</groupId>
+        <version>${revision}</version>
+        <relativePath>../douyaba-framework-parent/pom.xml
+        </relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>douyaba-framework-starters</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>douyaba-framework-starter-web-protocol</module>
+        <module>douyaba-framework-starter-swagger</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <artifactId>douyaba-framework-web-protocol-model</artifactId>
+            <groupId>com.github.douyaba</groupId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <artifactId>douyaba-framework-common</artifactId>
+            <groupId>com.github.douyaba</groupId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+</project>
