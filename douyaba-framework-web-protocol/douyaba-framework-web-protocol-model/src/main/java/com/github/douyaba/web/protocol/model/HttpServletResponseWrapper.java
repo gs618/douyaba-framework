@@ -14,6 +14,7 @@ import java.nio.charset.StandardCharsets;
 /**
  * @author s.c.gao
  */
+@Deprecated
 public class HttpServletResponseWrapper extends javax.servlet.http.HttpServletResponseWrapper {
 
     private final ByteArrayOutputStream bos = new ByteArrayOutputStream();
